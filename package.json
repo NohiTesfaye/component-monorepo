@@ -1,0 +1,23 @@
+{
+  "name": "monorepo-project",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "private": true,
+  "workspaces": [
+    "app",
+    "packages/*",
+    "System/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "## Structure",
+  "dependencies": {
+    "react-router-dom": "^7.6.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ui-components",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "echo \"Build script for ui-components\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.0.0",
+    "sass": "^1.72.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19"
+  }
+}
