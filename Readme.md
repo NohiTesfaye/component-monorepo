@@ -1,4 +1,4 @@
-# System Directory
+# System Directory for Individual part
 
 The `system` directory is the central application assembly point for this monorepo project. It is responsible for bringing together the individual feature systems developed in the `packages` directory and the shared components and utilities from the group packages (`ui-components`, `utils`) to form the complete application.
 

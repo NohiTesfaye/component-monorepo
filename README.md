@@ -1,4 +1,4 @@
-# Monorepo Project
+# Monorepo Project for group project part
 
 ## Structure
 
