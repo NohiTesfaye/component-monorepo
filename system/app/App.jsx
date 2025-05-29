@@ -8,7 +8,7 @@ function App() {
     <GlobalStateProvider> {/* Wrap the application with the state provider */}
       <Router> {/* Wrap the application with the router */}
         <div>
-          <h1>Main Application Assembly</h1>
+          <h1>Main Application Assembly For Idividual Part</h1>
 
           {/* Basic Navigation */}
           <nav>
