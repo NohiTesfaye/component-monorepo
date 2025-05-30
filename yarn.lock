@@ -305,7 +305,7 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
-"app@file:/home/muaz/monorepoProject/app":
+"app@file:C:\\Users\\S\\monorepoProject1\\app":
   version "1.0.0"
   resolved "file:app"
   dependencies:
@@ -428,11 +428,11 @@ fdir@^6.4.4:
   resolved "https://registry.npmjs.org/fdir/-/fdir-6.4.4.tgz"
   integrity sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==
 
-"feature-x@file:/home/muaz/monorepoProject/packages/feature-x":
+"feature-x@file:C:\\Users\\S\\monorepoProject1\\packages\\feature-x":
   version "1.0.0"
   resolved "file:packages/feature-x"
 
-"feature-y@file:/home/muaz/monorepoProject/packages/feature-y":
+"feature-y@file:C:\\Users\\S\\monorepoProject1\\packages\\feature-y":
   version "1.0.0"
   resolved "file:packages/feature-y"
 
@@ -686,7 +686,7 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-"ui-components@file:/home/muaz/monorepoProject/packages/ui-components":
+"ui-components@file:C:\\Users\\S\\monorepoProject1\\packages\\ui-components":
   version "0.1.0"
   resolved "file:packages/ui-components"
   dependencies:
@@ -704,7 +704,7 @@ update-browserslist-db@^1.1.3:
     escalade "^3.2.0"
     picocolors "^1.1.1"
 
-"utils@file:/home/muaz/monorepoProject/packages/utils":
+"utils@file:C:\\Users\\S\\monorepoProject1\\packages\\utils":
   version "0.1.0"
   resolved "file:packages/utils"
 
