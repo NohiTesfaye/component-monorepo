@@ -1,28 +1,55 @@
-import React from 'react';
-import { UserCard } from 'your-ui-components'; // Importing a UI component
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { UserCard, LoadingSpinner } from 'your-ui-components'; // Importing UI components
 import { fetchUserData } from 'your-utils'; // Importing a utility function
 
-const UserProfile = () => {
-  const [user, setUser] = React.useState(null);
+const UserProfile = ({ userId }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const loadUserData = async () => {
-      const data = await fetchUserData();
-      setUser(data);
+      try {
+        setLoading(true);
+        const data = await fetchUserData(userId);
+        setUser(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
     };
+    
     loadUserData();
-  }, []);
+  }, [userId]);
 
-  if (!user) {
-    return <div>Loading...</div>;
+  if (loading) {
+    return <LoadingSpinner />;
+  }
+
+  if (error) {
+    return <div className="error-message">Error: {error}</div>;
   }
 
   return (
-    <div>
-      <h1>User Profile</h1>
-      <UserCard user={user} />
-    </div>
+    <section className="user-profile">
+      <header>
+        <h1>User Profile</h1>
+      </header>
+      <main>
+        <UserCard user={user} />
+      </main>
+    </section>
   );
+};
+
+UserProfile.propTypes = {
+  userId: PropTypes.string.isRequired
+};
+
+UserProfile.defaultProps = {
+  userId: 'current' // Default value if none provided
 };
 
 export default UserProfile;
